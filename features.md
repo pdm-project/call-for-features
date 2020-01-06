@@ -25,3 +25,10 @@
 ## `pdm install`
 - Option to install specific section
 - Option to not install default dependencies
+- `--vendor <path>` to install libs into specified path without dist info
+
+## `pdm use`
+- Choose a Python interpreter path by giving its version number or path.
+- Checks Python compatibility when use
+- Option to choose a path other than `__pypackages__` in the project directory.
+- Temporarily configs are stored in a dot-file under the project root.
