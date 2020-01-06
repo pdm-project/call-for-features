@@ -1,0 +1,54 @@
+[tool.pdm]
+name = "pdm"
+version = "1.0.0"
+description = "Python Development Master"
+authors = [
+    "frostming <mianghong@gmail.com>"
+]
+license = "MIT"
+python = ">=3.6"
+readme = "README.md"
+extras = ["security"]    # match the following 'security-dependencies' section
+
+homepage = "https://python-poetry.org/"
+repository = "https://github.com/python-poetry/poetry"
+documentation = "https://python-poetry.org/docs"
+
+keywords = ["packaging", "dependency", "workflow"]
+
+classifiers = [
+    "Topic :: Software Development :: Build Tools",
+    "Topic :: Software Development :: Libraries :: Python Modules"
+]
+
+[[tool.pdm.source]]
+name = "private"
+url = "http://example.org/pypi/simple"
+verify = false
+
+[tool.pdm.dependencies]
+click = ">=7.0"
+jinja2 = "*"
+colorama = {"version": "*", "marker": "os_name=='nt'"}
+
+[tool.pdm.dev-dependencies]
+pytest = {"version": "*", "python": ">=3.6"}
+mypackage = {"version": "*", index = "private"}   # match the 'private' source
+
+[tool.pdm.lint-dependencies]
+mypy = "*"
+flake8 = "*"
+
+[tool.pdm.security-dependencies]
+PySocks = "*"
+
+[tool.pdm.scripts]    # Script shortcuts, run with local packages loaded
+lint = "mypy . && flake8 ."
+
+[tool.pdm.cli]     # Translate to 'console_scripts' entrypoints
+pdm = "pdm.cli:main"
+
+[tool.pdm.plugins."flask.command"]    # Other entrypoints type
+foo = "pdm.plugins:foo"
+
+[build-system]    # PEP 517 build backend
