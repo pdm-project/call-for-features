@@ -3,6 +3,7 @@
 - **No virtualenv**
 - PEP 517 builds
 - Plugins system like docker CLI.
+- Multiple hooks that allow to be plugged in.
 - Project template tool as a optional plugin.
 
 ## Dependencies specification
@@ -26,6 +27,7 @@
 - Option to install specific section
 - Option to not install default dependencies
 - `--vendor <path>` to install libs into specified path without dist info
+  Or `pdm vendor` maybe?
 
 ## `pdm use`
 - Choose a Python interpreter path by giving its version number or path.
