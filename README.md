@@ -16,3 +16,7 @@ What is your pain during the development of a Python project?
 What features you miss the most that are not included in `poetry` or `pipenv`?
 
 Open a new issue at this repository, open to all community users.
+
+## A Better project name?
+
+I am having a hard time thinking of a good project name. Any suggestion is welcomed!
