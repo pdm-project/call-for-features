@@ -20,3 +20,5 @@ Open a new issue at this repository, open to all community users.
 ## A Better project name?
 
 I am having a hard time thinking of a good project name. Any suggestion is welcomed!
+* Not longer than 5-6 characters
+* PyPI package name not occupied
