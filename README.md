@@ -1,4 +1,4 @@
-# PDM - Python Development Manager
+# PDM - Python Development Master
 
 *This repository exists to collect feature requests for PDM project*
 
