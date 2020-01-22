@@ -6,6 +6,8 @@
 
 PDM is meant to be a **next generation** Python package management tool.
 
+**The first preview release is published: https://github.com/pdm-project/pdm **
+
 ## Contents
 
 * [Features in consideration](/features.md)
