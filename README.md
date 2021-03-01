@@ -1,5 +1,7 @@
 # PDM - Python Development Master
 
+**ANNOUCEMENT: This repository has ended its duty and doesn't accept any more requests. Please go to [PDM issues](https://github.com/frostming/pdm/issues) to file a feature request.**
+
 *This repository exists to collect feature requests for PDM project*
 
 ## What is PDM?
